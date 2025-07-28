@@ -539,3 +539,103 @@ h6,
 .footer .copyright a:hover {
 	color: var(--primary);
 }
+
+blockquote {
+	position: relative;
+	display: inline-block;
+	background: #eee;
+	padding: 20px;
+	border-radius: 10px;
+	color: #777777;
+	text-align: left;
+
+	box-shadow: 1px 1px 1px #999, 2px 2px 1px #999, 3px 3px 1px #999;
+	transition-duration: 0.3s;
+
+	span.author {
+		position: relative;
+		display: block;
+		text-align: right;
+		margin-top: 5px;
+		color: #b78d65;
+
+		i {
+			position: relative;
+			background: #eee;
+			padding-left: 5px;
+			font-style: italic;
+			z-index: 5;
+		}
+
+		&::before {
+			display: block;
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: #ccc;
+			z-index: 1;
+		}
+	}
+
+	&:hover {
+		box-shadow: 1px 1px 5px #999, 2px 2px 6px #999, 3px 3px 7px #999;
+	}
+}
+
+.challenge-modal .modal-content {
+	background-color: #fffdf9;
+	border-radius: 1rem;
+	border: none;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.challenge-modal .modal-header {
+	background-color: #f6f1e7;
+	border-bottom: 1px solid #e5d5c0;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+
+.challenge-modal .modal-title {
+	color: #b78d65;
+	font-size: 1.25rem;
+}
+
+.challenge-modal .modal-body {
+	color: #333;
+	font-size: 1rem;
+	background-image: linear-gradient(to bottom right, #fff9f1, #fffdf9);
+	border-radius: 0.75rem;
+	padding: 1rem;
+	text-align: left;
+	line-height: 1.7;
+}
+
+.challenge-modal .btn-close {
+	filter: brightness(0.5);
+}
+
+.text-brown {
+	color: #b78d65;
+}
+
+.challenge-modal .card {
+	background-color: #fffdf9;
+}
+
+.challenge-modal .card-title {
+	font-size: 1.25rem;
+}
+
+.challenge-modal .modal-body {
+	text-align: left;
+	font-size: 1rem;
+	line-height: 1.7;
+}
+
+.challenge-modal ul li {
+	margin-bottom: 0.5rem;
+}
